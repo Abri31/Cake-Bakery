@@ -135,7 +135,6 @@
     }
 }
 /* home section end */
-
 /* top cards */
 #box{
     margin-top: 50px;
@@ -284,9 +283,7 @@
     background-color: #2e1700;
     color: white;
 }
-
 /* product cards end */
-
 /* gallary */
 #gallary{
     margin-top: 50px;
@@ -315,7 +312,6 @@
     transition: 0.5s ease;
 }
 /* gallary */
-
 /* about */
 #about{
     margin-top: 50px;
@@ -357,7 +353,6 @@
     }
 }
 /* about */
-
 /* contact */
 #contact{
     margin-top: 100px;
@@ -400,7 +395,85 @@
     background-color: rgba(161,109,14,1);
 }
 /* contact */
-
+/* checkout */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+ .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  .row {
+      flex-direction: row;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+/* checkout */
 /* footer */
 #footer{
     width: 100%;    
