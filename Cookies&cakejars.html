@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cupcakes</title>
+    <title>Cookies,Cake Jars & Pops</title>
     <link rel="shortcut icon" type="image" href="Logo.png">
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap links -->
@@ -30,6 +30,7 @@
     <!-- animation links -->
 <body>
     <!-- navbar -->
+    <script src="localStorage.js"></script>
     <nav class="navbar navbar-expand-md" id="navbar">
         <!-- Brand -->
         <a class="navbar-brand" href="#" id="logo"><img src="Logo.png" alt="" width="50px">Sugarplum Fairies</a>
@@ -86,11 +87,6 @@
        <div class="row" style="margin-top:50px;">
           <div class="col-md-3 py-3 py-md-0">
            <div class="card">
-               <div class="overlay">
-                   <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-               </div>
                <img src="Candy Jar.png" alt="">
                <div class="card-body">
                    <h3>Candy Jars</h3>
@@ -102,17 +98,12 @@
                      <i class="bx bxs-star "></i>
                    </div>
                    <p>WRITE</p>
-                   <h6>idk<span><button>Add Cart</button></span></h6>
+                   <h6>idk<span><button onclick="addToCart('Candy Jars', 20)">Add Cart</button></span></h6>
                </div>
            </div>
           </div>
           <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="mango mousse.png" alt="">
                 <div class="card-body">
                     <h3>Mango Mousse Jar</h3>
@@ -124,17 +115,12 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE</p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Mango Mousse Jar', 20)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
           <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="cakepops.png" alt="">
                 <div class="card-body">
                     <h3>Cake Pops</h3>
@@ -142,21 +128,16 @@
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
+                      <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE</p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Cake Pops', 20)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="Protein Balls.png" alt="">
                 <div class="card-body">
                     <h3>Dark Chocolate Balls</h3>
@@ -168,17 +149,12 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE</p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Dark Chocolate Balls', 20)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="cakeballs.png" alt="">
                 <div class="card-body">
                     <h3>Cake Balls with Toppings</h3>
@@ -186,21 +162,16 @@
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
+                      <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE</p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Cake Balls with Toppings', 20)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="energycookies.png" alt="">
                 <div class="card-body">
                     <h3>Protein Cookies</h3>
@@ -212,17 +183,12 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE</p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Protein Cookies', 20)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
               <div class="card">
-                  <div class="overlay">
-                      <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                      <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                      <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                  </div>
                   <img src="Snickerdoodle cookies.png" alt="">
                   <div class="card-body">
                       <h3>Snickerdoodle Cookies</h3>
@@ -234,17 +200,12 @@
                         <i class="bx bxs-star "></i>
                       </div>
                       <p>WRITE</p>
-                      <h6>idk <span><button>Add Cart</button></span></h6>
+                      <h6>idk <span><button onclick="addToCart('Snickerdoodle Cookies', 20)">Add Cart</button></span></h6>
                   </div>
                </div>
           </div>
           <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="stained glass cookies.png" alt="">
                 <div class="card-body">
                     <h3>Stained Glass Cookies</h3>
@@ -256,7 +217,7 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>WRITE </p>
-                    <h6>idk<span><button>Add Cart</button></span></h6>
+                    <h6>idk<span><button onclick="addToCart('Stained Glass Cookies', 20)">Add Cart</button></span></h6>
                 </div>
       </div>
   </section>

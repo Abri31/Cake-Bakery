@@ -27,6 +27,7 @@
 </head>
 <body>
     <!-- navbar -->
+    <script src="localStorage.js"></script>
     <nav class="navbar navbar-expand-md" id="navbar">
         <!-- Brand -->
         <a class="navbar-brand" href="#" id="logo"><img src="Logo.png" alt="" width="50px">Sugarplum Fairies</a>
@@ -64,7 +65,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="checkout.html">Checkout</a>
               </li>
           </ul>
         </div>
@@ -81,13 +82,9 @@
    <div class="container">
        <h1>Customized Cakes</h1>
        <div class="row" style="margin-top:50px;">
+
           <div class="col-md-3 py-3 py-md-0">
            <div class="card">
-               <div class="overlay">
-                   <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-               </div>
                <img src="Candy Cake.png" alt="">
                <div class="card-body">
                    <h3>Candy Cake</h3>
@@ -99,17 +96,13 @@
                      <i class="bx bxs-star "></i>
                    </div>
                    <p>Topped with candies and goodies and all things nice,Within a Vanilla chocolate cake.</p>
-                   <h6>AED 200-250 <span><button>Add Cart</button></span></h6>
+                   <h6>AED 250 <span><button onclick="addTocart('Candy Cake',250)">Add Cart</button></span></h6>
                </div>
            </div>
           </div>
+
           <div class="col-md-3 py-3 py-md-0">
            <div class="card">
-               <div class="overlay">
-                   <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-               </div>
                <img src="Husky Cake.png" alt="">
                <div class="card-body">
                    <h3>Husky Cake</h3>
@@ -121,17 +114,13 @@
                      <i class="bx bxs-star "></i>
                    </div>
                    <p>Vanilla chocolate cake filled and frosted with whipped cream.</p>
-                   <h6>AED 250 <span><button>Add Cart</button></span></h6>
+                   <h6>AED 250 <span><button onclick="addToCart('Husky Cake', 250)">Add Cart</button></span></h6>
                </div>
            </div>
           </div>
+
           <div class="col-md-3 py-3 py-md-0">
            <div class="card">
-               <div class="overlay">
-                   <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-               </div>
                <img src="Football Cake.png" alt="">
                <div class="card-body">
                    <h3>Football Cake</h3>
@@ -143,17 +132,13 @@
                      <i class="bx bxs-star "></i>
                    </div>
                    <p>Vanilla chocolate cake.</p>
-                   <h6>AED 400 <span><button>Add Cart</button></span></h6>
+                   <h6>AED 400 <span><button onclick="addToCart('Football Cake', 400)">Add Cart</button></span></h6>
                </div>
            </div>
           </div>
+
           <div class="col-md-3 py-3 py-md-0">
            <div class="card">
-               <div class="overlay">
-                   <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                   <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-               </div>
                <img src="Demon Slayer Cake.png" alt="">
                <div class="card-body">
                    <h3>Demon Slayer Cake</h3>
@@ -165,7 +150,7 @@
                      <i class="bx bxs-star checked"></i>
                    </div>
                    <p>Dig into this Demon Slayer-themed chocolate cake and let the flavors transport you to the thrilling world of demon slayers and fierce battles!</p>
-                   <h6>AED 200 <span><button>Add Cart</button></span></h6>
+                   <h6>AED 200 <span><button onclick="addToCart('Demon slayer Cake', 200)">Add Cart</button></span></h6>
                </div>
            </div>
           </div>
@@ -174,11 +159,6 @@
        data-aos-duration="1500">
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="Harry Potter Cake.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="Harry Potter.png" alt="">
                 <div class="card-body">
                     <h3>Harry Potter Cake</h3>
@@ -190,17 +170,12 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>A magical treat straight from the wizarding world with this moist Vanilla Chocolate Cake</p>
-                    <h6>AED 250<span><button>Add Cart</button></span></h6>
+                    <h6>AED 250<span><button onclick="addToCart('Harry Potter Cake', 250)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="minecraft cake.png" alt="">
                 <div class="card-body">
                     <h3>Minecraft Cake</h3>
@@ -212,17 +187,12 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>Moist chocolate cake filled and frosted with whipped cream frosting</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
+                    <h6>AED 200 <span><button onclick="addToCart('Minecraft Cake', 200)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
                 <img src="barbie cake.png" alt="">
                 <div class="card-body">
                     <h3>Vintage Barbie Cake</h3>
@@ -234,122 +204,154 @@
                       <i class="bx bxs-star "></i>
                     </div>
                     <p>An absolute delight , a litchi flavored moist cream cake covered in fondant</p>
-                    <h6>AED 150 <span><button>Add Cart</button></span></h6>
+                    <h6>AED 150 <span><button onclick="addToCart('Vinatge Barbie Cake', 150)">Add Cart</button></span></h6>
                 </div>
             </div>
            </div>
+
            <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
-                <img src="Sonic Cake.png" alt="">
-                <div class="card-body">
-                    <h3>Sonic Cake</h3>
-                    <div class="star">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
-                      <i class="bx bxs-star "></i>
-                    </div>
-                    <p>WRITE SOMETHING</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
-                </div>
-            </div>
-           </div>
-           <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
-                <img src="MLP.png" alt="">
-                <div class="card-body">
-                    <h3>My Little Pony Cake</h3>
-                    <div class="star">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
-                      <i class="bx bxs-star "></i>
-                    </div>
-                    <p>WRITE SOMETHING</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
-                </div>
-            </div>
-           </div>
-           <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
-                <img src="spiderman.png" alt="">
-                <div class="card-body">
-                    <h3>Spiderman Cake</h3>
-                    <div class="star">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
-                      <i class="bx bxs-star "></i>
-                    </div>
-                    <p>WRITE SOMETHING</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
-                </div>
-            </div>
-           </div>
-           <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
-                <img src="fortnight cake.png" alt="">
-                <div class="card-body">
-                    <h3>Fortnight Cake</h3>
-                    <div class="star">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star "></i>
-                      <i class="bx bxs-star "></i>
-                    </div>
-                    <p>WRITE SOMETHING</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
-                </div>
-            </div>
-           </div>
-           <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <div class="overlay">
-                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                </div>
-                <img src="Brawl Stars .png" alt="">
-                <div class="card-body">
-                    <h3>Brawl Stars</h3>
-                    <div class="star">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                    </div>
-                    <p>WRITE SOMETHING</p>
-                    <h6>AED 200 <span><button>Add Cart</button></span></h6>
-                </div>
-            </div>
-           </div>
-       </div>
-    </div>
+          <img src="Sonic Cake.png" alt="">
+          <div class="card-body">
+              <h3>Sonic Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star "></i>
+                <i class="bx bxs-star "></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Sonic Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="MLP.png" alt="">
+          <div class="card-body">
+              <h3>My Little Pony Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star "></i>
+                <i class="bx bxs-star "></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('My little Pony Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="fortnight cake.png" alt="">
+          <div class="card-body">
+              <h3>Fortnight Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star "></i>
+                <i class="bx bxs-star "></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Fortnight Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="Brawl Stars .png" alt="">
+          <div class="card-body">
+              <h3>Brawl Stars</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Brawlstars Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="tennis cake.png" alt="">
+          <div class="card-body">
+              <h3>Tennis Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Tennis Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="The Fixies.png" alt="">
+          <div class="card-body">
+              <h3>The Fixies Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Fixies Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="CharacterThemed.png" alt="">
+          <div class="card-body">
+              <h3>Character Themed Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Character Themed Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
+
+     <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="minion.png" alt="">
+          <div class="card-body">
+              <h3>Minion Cake</h3>
+              <div class="star">
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+                <i class="bx bxs-star checked"></i>
+              </div>
+              <p>WRITE SOMETHING</p>
+              <h6>AED 200 <span><button onclick="addToCart('Minion Cake', 200)">Add Cart</button></span></h6>
+          </div>
+      </div>
+     </div>
   </section>
   <!-- footer -->
   <footer id="footer"
